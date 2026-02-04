@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:sqlite:warehouse.db
+    driver-class-name: org.sqlite.JDBC
+    hikari:
+      connection-init-sql: PRAGMA foreign_keys=ON
+  sql:
+    init:
+      mode: always
